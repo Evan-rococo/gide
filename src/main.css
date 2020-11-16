@@ -1,0 +1,332 @@
+.layout {
+    background-color:none;
+    width: 100vw;
+}
+
+h1 {font-family:"Arial Rounded MT Bold";
+    margin: 0;
+    padding: 0;}
+
+h2 {font-family:"Arial Rounded MT Bold";
+    margin: 0;
+    padding: 0;}
+
+h3 {font-family:"Arial Rounded MT Bold";
+    color: black;
+    line-height: 1.125;
+    padding: 0;}
+
+p{
+    font-family:"ABC Helveesti Trial";
+    line-height: 1.125;}
+        
+a:link {text-decoration: none;}
+
+img {width: 100%;}
+
+* {box-sizing: border-box;}
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  
+    .home-links a {margin-right: 1em;}
+
+    .div-1 {width: 100%;
+        text-align: center;
+        background-color: none}
+
+    .div {display: inline-block;
+        width: 100%;
+        background-color: none;}
+
+    .div-menu {
+        background-color: none;
+        text-align: left;
+        width: 18vw;}
+
+    .div-logo {background-color: none;
+        text-align: right;
+        width: 72vw;}
+
+
+
+     /* desktop */
+  @media (min-width: 92em) {
+    .div-1 {background-color:none;
+        width: 86vw;
+        margin: auto;
+        margin-top: 2em;
+        }
+
+    .div {background-color:none;
+        margin-bottom: 6em;}
+    
+    .div-menu {background-color:none;
+        float: left;
+        height: 9vw;
+        text-align: left;
+        width: 0vw;}
+    
+    .div-logo {background-color:none;
+        text-align: center;
+        width: 86vw;}
+
+    
+    h1 {font-size:calc(3em + .67vw);}    
+    
+}
+
+
+
+
+     /* desktop */
+  @media (max-width: 92em) {
+    .div-1 {background-color:none;
+        width: 86vw;
+        margin: auto;
+        margin-top: 2em;}
+
+    .div {background-color:none;
+        margin-bottom: 6em;}
+    
+    .div-menu {background-color:none;
+        float: left;
+        height: 9vw;
+        text-align: left;
+        width: 0vw;}
+    
+    .div-logo {background-color:none;
+        text-align: center;
+        width: 86vw;}
+
+    
+    h1 {font-size:calc(3em + .67vw);} 
+    
+    .Sidebar{position:fixed;
+        top:10em;
+        opacity:100%;
+        z-index:0;
+        left:5vw;
+        width:10em;
+        line-height:1.125em;
+        background-color: none}
+
+    .genres {background-color: white; margin-bottom: 1.34em;}
+    .side-1 {background-color: white; margin-bottom: 1.34em;}
+    .side-2 {background-color: white;}
+
+
+}
+
+  /* laptop */
+  @media (max-width: 70em) {
+    .div-1 {background-color:none;
+        width: 90vw;
+        margin: auto;
+        margin-top: 1.67em;}
+
+    .div {background-color:none;
+        margin-bottom: 6em;}
+    
+    .div-menu {background-color:none;
+        float: left;
+        height: 9vw;
+        text-align: left;
+        width: 0vw;}
+    
+    .div-logo {background-color:none;
+        float: right;
+        text-align: center;
+        width: 90vw;}
+
+    h1 {font-size:calc(1.67em + 3vw);}
+    
+    h2 {background-color: none;
+        margin-top: 1em;
+        font-size: 1.67em;}  
+    
+    .Sidebar{position:fixed;
+        top:10em;
+        opacity:100%;
+        z-index:0;
+        left:5vw;
+        width:10em;
+        line-height:1.125em;
+        background-color: none}
+    
+    h3{font-size: 1.67em;
+        margin: 0;}   
+        
+    .genres {background-color: none; margin-bottom: 1.34em;}
+    .side-1 {background-color: none; margin-bottom: 1.34em;}
+    .side-2 {background-color: none;}
+        
+    }
+
+
+  /* mobile landscape */
+  @media (max-width: 48em) {
+    .div-1 {
+        background-color:none;
+        width: 90vw;
+        margin-left: 5vw;
+        margin-top: 1.67em;}
+
+    .div {
+        background-color:none;
+        margin-bottom: 6em;}
+    
+    .div-menu {
+        background-color:none;
+        float: left;
+        height: 9vw;
+        text-align: left;
+        width: 21vw;}
+    
+    .div-logo {
+        background-color:none;
+        float: right;
+        text-align: right;
+        width: 69vw;}
+    
+    h1 {font-size:3em;}
+    
+    h2 {background-color: none;
+        margin-top: .8em;
+        font-size: 1.67em;} 
+        
+    h3 {color: black;
+        font-size: 1.67em;
+        margin:0em;
+        padding: 0em;}  
+            
+    .Sidebar{top:9em;
+        border-radius:25px;
+        left: 3vw;
+        background-color: white;
+        padding-top:1em;
+        padding-bottom:1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 12em;
+        height: 25em;
+        box-shadow:2px 6px 6px 0 #000}
+
+    .genres {background-color: none; margin-bottom: 1.34em;}
+    .side-1 {background-color: none; margin-bottom: 1.34em;}
+    .side-2 {background-color: none;}
+    }
+
+
+  /* mobile landscape */
+   @media (max-width: 33em) {
+    .div-1 {
+        background-color:none;
+        width: 90vw;
+        margin: auto;
+        margin-top: 1.67em;}
+
+    .div {background-color:none;
+        margin-bottom: 6em;}
+    
+    .div-menu {background-color:none;
+        float: left;
+        height: 9vw;
+        text-align: left;
+        width: 24vw;}
+    
+    .div-logo {background-color:none;
+        float: right;
+        text-align: right;
+        width: 66vw;}
+
+    
+    h1 {font-size: 9vw;}
+    
+    h2 {background-color: none;
+        margin-top: .8em;
+        font-size: 5vw;}
+            
+    h3 {font-size: 5vw;
+        margin:0em;
+        padding: 0em;}
+
+    .Sidebar{
+        top: 27vw;
+        background-color: none;
+        border-radius:25px;
+        padding-left:3vw;
+        padding-top:.67em;
+        padding-bottom:.67em;
+        padding-right:3vw;
+        height:calc(73vw + 1em);
+        width:36.67vw;
+        font-size: 1.67em;
+        box-shadow:2px 6px 6px 0 #000}
+
+    .genres {background-color: none; margin-bottom: 5vw;}
+    .side-1 {background-color: none; margin-bottom: 5vw;}
+    .side-2 {background-color: none;}
+    }
+
+
+     /* mobile portrait */
+    @media (max-width: 23em) {
+    .div {background-color: none;
+        margin-bottom: 0em;}
+        
+    .div-1 {display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin: auto;
+        margin-top: 6vw;}
+    
+    .div-menu {background-color:none;
+        height: 9vw;
+        order: 2;
+        margin-left: 0;
+        flex: 50%;}
+    
+    .div-logo {order: 1;
+        background-color: none;
+        text-align: left;
+        flex: 50%;}
+
+    h1 {font-size: 12.34vw;}
+
+    h2 {font-size: 7vw;
+        margin-top: 0em;}
+
+    h3 {font-size: 7vw;
+        margin:0em;
+        padding: 0em;}
+    
+   
+
+    .Sidebar{border-radius:6vw;
+        background-color: none;
+        top:calc(27vw + 1.34em);
+        height:calc(93vw + 1em);
+        width:54vw;
+        left: 1vw;
+        box-shadow:2px 6px 6px 0 #000}
+
+    .genres {background-color: none; margin-bottom: 5vw;}
+    .side-1 {background-color: none; margin-bottom: 5vw;}
+    .side-2 {background-color: none;}
+     /* ends default shit */
+}
+    
