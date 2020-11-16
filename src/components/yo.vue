@@ -26,7 +26,7 @@
 			<h2 style="height:1em">MENU</h2>
 		</div></div>
 	
-    <div class="div div-logo"><h1>HOT REQUEST</h1></div>
+    <div class="div div-logo"><g-link to="/"><h1>HOT REQUEST</h1></g-link></div>
 </div>
 	</yo>
 </div>
@@ -176,7 +176,7 @@ body {
   }
    
 
-@media(max-width: 23em) {
+@media(max-width: 24em) {
 
        .Hamburger{
         opacity:100%;

@@ -242,7 +242,7 @@ p{font-family: "Arial Rounded MT Bold";}
     }
 
     .sticky{
-        background-color:red;
+        background-color:white;
         padding:.34em;
         border-radius:25px;
         margin-top:-3em;
@@ -272,8 +272,7 @@ p{font-family: "Arial Rounded MT Bold";}
 
 
     .sticky{
-        background-color:red;
-        
+        background-color:white;
         border-radius:25px;
         margin-top:-3em;
         right:3vw;
@@ -305,7 +304,7 @@ p{font-family: "Arial Rounded MT Bold";}
         z-index:10
     }
    .sticky{
-        background-color:blue;
+        background-color:white;
         border-radius:25px;
         margin-top:-7em;
         padding: .67em;
@@ -369,7 +368,7 @@ p{font-family: "Arial Rounded MT Bold";}
         margin-top: 0;}
 
        .sticky{
-        background-color:red;
+        background-color:white;
         padding: .67em;
         border-radius:25px;
         margin-top:-7em;
@@ -418,22 +417,25 @@ p{font-family: "Arial Rounded MT Bold";}
         margin: 0;}
 }
 
-  @media screen and (max-width:23em){
+  @media screen and (max-width:24em){
 	.product-info{
-      padding-bottom:.67vw;
-      background-color: none;
+      padding-bottom:4vw;
+      margin: 0;
+      background-color: yellow;
       text-align:right;}
 
     .product-card{
         flex:2 99%;
+        margin: 0;
+        padding: 0;
 		    background-color: none;}
     
     .products{
         display:flex;
         flex-wrap:wrap;
         margin-top:9vw;
-        margin-left:2vw;
-        width:98vw;
+        margin:auto;
+        width:90vw;
         flex:2 36%;
         background-color:none;}
         
@@ -445,6 +447,9 @@ p{font-family: "Arial Rounded MT Bold";}
         right:3vw;
         transform:rotate(-20deg);
         box-shadow:0 0 3vw .67vw #000}
+
+       p {font-size: 6vw;
+          margin:0;}
 
       h2{
         margin: 0;}
