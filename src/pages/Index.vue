@@ -12,7 +12,7 @@
 
      </div>
   </div>
-  <div class="column">
+  <div class="column-right">
     <p>A frattura del pene o peniena, anche denominata sindrome del chiodo rotto, è un raro trauma del pene che consiste nell'improvvisa e dolorosa <br>rottura della tonaca albuginea dei corpi cavernosi, dovuta a un colpo violento verificatosi durante l'erezione. Traumi simili, se avvenuti a pene flaccido ad esempio durante l'attività sportiva o per l'utilizzo di armi da fuoco, non vengono invece definiti fratture, ma semplici traumi penieni.</p>
   </div>
 </div>
@@ -53,47 +53,68 @@ export default {
 .home-links a {
   margin-right: 1em;}
 
-
 @media (min-width: 48em){
-  img {
-    width: 100%;
-  }
+  /* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  
+}
 
-  .column {
-    width: 96%;
-    background-color: none;
-  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+.home-links a {
+  margin-right: 1em;}
+
    iframe {
     width: 70vw;
-    height: 50vw;
+    height: 35vw;
     border-radius: 25px;
-    margin-left:26vw;
-    margin-bottom: 9em;
     box-shadow: 0px 0px 6vw 7px green;
-  }
+    margin-left:25.67vw;
+    margin-bottom: 9em;}
 
-
-.app{
-  margin-bottom: .67em;
-  width: 100%;
-  text-align: center;
-  background-color: none;
-}
-
-.row {
+  .row {
   margin-top:2em;
-  margin-left: 25vw;
+  margin-left: 27vw;
+  margin-right: 3vw;
+  margin-bottom: 1.67em;
+  background-color: none;}
+
+  .app {
+    width: 100%;
+    background-image: ;
+    background-color: none;}
+
+   .column {
+    background-color:none;}
+
+  p { margin-left: 37vw;
+    
+    width: ;
+    background-color: none;}
+
+  h4 {
+    margin-top: .34em;
+    margin: auto;
+    font-size: 2vw;}
+  }
+  
+.pointer {cursor: pointer;}
+
+* {
+  box-sizing: border-box;
 }
 
-h3{
-  margin-top: .34em;
-  font-size: 2.67vw;
-  line-height: 1.125;
-  font-style: normal;
-  text-align: center;
-}
 
-}
+
 
 
 
@@ -108,12 +129,9 @@ h3{
     box-shadow: 0px 0px 6vw 7px green;}
 
 .app{display: grid;
-    background-color: red;
+    background-color: none;
     margin-bottom:0em;
     width: 90vw;}
-
-  h4 {font-size: 3.75vw;
-    margin: 0;}
 
   .row:after {
   content: "";
@@ -127,6 +145,11 @@ h3{
 
 .left, .right{display: contents;}
 
+p { width: 90vw;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
+  }
+
 h4 {
   font-size: 3.75vw;
   margin: 0;
@@ -139,13 +162,13 @@ h4 {
     margin-top: 0vw;
     margin-bottom: 1.67em;
     margin-left: 5vw;
-    background-color: silver;}
+    background-color: none;}
 }
 
 
 
 @media (max-width: 33em){
-  img {width: 90vw;}
+  img {fit: fill;}
 
 .row {background-color: none;
   margin-left: 5vw;
@@ -163,9 +186,10 @@ h4 {
     margin:auto;
     margin-top: 0vw;
     margin-bottom: 5.67vw;
-    background-color: orange;}
+    background-color: none;}
 
-p {font-size: 4vw;}
+p {font-size: 4vw;
+  margin-left: 0;}
 }
 
 

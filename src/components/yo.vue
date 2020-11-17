@@ -4,21 +4,25 @@
     <div class="div div-menu">
 <div class="sidebar">
 		<div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%;">
-      <div><div class="genres">
+      
+      <div class="row">
 
-			<g-link to="/genre/"><h3>NEW STUFF</h3></g-link>
+      <div class="column-1"> 
+      <div><div class="genres">
+      <g-link to="/genre/"><h3>NEW STUFF</h3></g-link>
 			<g-link to="/boogie/"><h3>BOOGIE</h3></g-link>
 			<g-link to="/esoteric/"><h3>ESOTERIC</h3></g-link>
 			<g-link to="/pop/"><h3>POP MUSIC</h3></g-link>
 			<g-link to="/reggae/"><h3>REGGAE</h3></g-link>
-			<g-link to="/tropical/"><h3>TROPICAL</h3></g-link></div>
+			<g-link to="/tropical/"><h3>TROPICAL</h3></g-link></div></div></div>
 
-			<div class="side-1">
+			<div class="column-2">
+      <div class="side-1">
 			<g-link to="/faq/"><h3>FAQ</h3></g-link>
 			<g-link to="/contact/"><h3>CONTACT</h3></g-link></div>
 			<div class="side-2">
 			<g-link to="/cart/"><h3>CART (0)</h3></g-link>
-			<g-link><h3>SEARCH</h3></g-link>
+			<g-link><h3>SEARCH</h3></g-link></div>
 
 		
     </div></div></div></div>
@@ -27,7 +31,7 @@
 		</div></div>
 	
     <div class="div div-logo"><g-link to="/"><h1>HOT REQUEST</h1></g-link></div>
-</div>
+</div></div>
 	</yo>
 </div>
 </template>
@@ -71,9 +75,32 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.67em;
+  margin-top: 1.67em;}
 
+
+
+* {
+  box-sizing: border-box;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;}
+
+.column-1{ background-color: none;
+  margin-right: 3vw;}
+
+.column-2{ background-color: none;}
+
+@media screen and (min-height: 33em) {
+  .row {flex-direction: column;}
+
+  .column-1{ background-color: none;
+    width: 10em;}
+}
+
+
+
  @media(min-width: 98em) {
   
          .Hamburger{

@@ -6,7 +6,7 @@
 
 	
 	<section class="products">
-	<div class="sticky" style="position:fixed;"><h2>BOOGIE</h2></div>
+
 	<div class="product-card">
 		<div class="product-image">
 			<g-link to="/product/">
@@ -273,6 +273,7 @@ p{font-family: "Arial Rounded MT Bold";}
 
     .sticky{
         background-color:white;
+        
         border-radius:25px;
         margin-top:-3em;
         right:3vw;
@@ -304,7 +305,7 @@ p{font-family: "Arial Rounded MT Bold";}
         z-index:10
     }
    .sticky{
-        background-color:white;
+        background-color:blue;
         border-radius:25px;
         margin-top:-7em;
         padding: .67em;
@@ -313,39 +314,47 @@ p{font-family: "Arial Rounded MT Bold";}
         box-shadow:0 0 3vw .67vw #000}
 
       h2{
-        margin: 0;
-      }
+        margin: 0;}
+
+       p{font-size: 1.67vw;
+        margin-top: 0;
+        margin-bottom: .67em;
+        }
 }
 
 @media (min-width:70em){
 	
 
 		.product-info{
-    padding-bottom:1.67em;
-	padding-top: .175em;
-    text-align:right;
-    font-size:calc(.34em+1.34vw)
-}
+      background-color: none;
+      padding-bottom:.34em;
+	    padding-top: 0em;
+      text-align:right;}
 
     .products{
         align-items:baseline;
         display:flex;
         flex-wrap:wrap;
         margin-top:2.34em;
-        width:73vw;
+        width:73.67vw;
         flex:1 36%;
-        background-color:none
-    }
+        background-color:none}
+
     .product-card{
         flex:1 26%;
-        margin-right:1.67vw
-    }
+        margin-right:1.67vw;}
+
+      p{font-size: 1.34vw;
+        margin-top: 0;
+        margin-bottom: .67em;
+        }
 }
 .pointer {cursor: pointer;}
 
 
 @media (max-width:48em){
     .product-info{
+      width: 46vw;
       background-color: none;
     }
     .product-card{
@@ -368,7 +377,7 @@ p{font-family: "Arial Rounded MT Bold";}
         margin-top: 0;}
 
        .sticky{
-        background-color:white;
+        background-color:red;
         padding: .67em;
         border-radius:25px;
         margin-top:-7em;
@@ -384,6 +393,7 @@ p{font-family: "Arial Rounded MT Bold";}
 
 @media screen and (max-width:33em){
 	.product-info{
+    width: 46vw;
       padding-bottom:.67em;
       background-color: none;
       text-align:right;}
@@ -421,7 +431,8 @@ p{font-family: "Arial Rounded MT Bold";}
 	.product-info{
       padding-bottom:4vw;
       margin: 0;
-      background-color: yellow;
+      width: 90vw;
+      background-color: ;
       text-align:right;}
 
     .product-card{
@@ -436,7 +447,7 @@ p{font-family: "Arial Rounded MT Bold";}
         margin-top:9vw;
         margin:auto;
         width:90vw;
-        flex:2 36%;
+        flex:2 46%;
         background-color:none;}
         
      .sticky{
@@ -448,7 +459,7 @@ p{font-family: "Arial Rounded MT Bold";}
         transform:rotate(-20deg);
         box-shadow:0 0 3vw .67vw #000}
 
-       p {font-size: 6vw;
+       p {font-size: 5vw;
           margin:0;}
 
       h2{
