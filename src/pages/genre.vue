@@ -1,7 +1,8 @@
 <template><div>
 <head>
-  <link rel="stylesheet" href="main.css"></head>
-  <header> <yo /></header>
+  <link rel="stylesheet" href="main.css"></head><div>
+  <header><yo /></header>
+  
 
 
 	
@@ -176,16 +177,21 @@
 		</div>
 	</div>
 	</section>
-
+<footer />
 </div>
 </div></div>
+
+
+
+
 </template>
 
 <script>
 import yo from '~/components/yo.vue'
+import footer from '~/components/footer.vue'
 export default {
   components: {
-    yo
+    yo, footer
   }
 }
 </script>
@@ -230,7 +236,7 @@ p{font-family: "Arial Rounded MT Bold";}
         display:flex;
         flex-wrap:wrap;
         margin-top:0;
-        margin-left:25vw;
+        margin-left:21vw;
         width:44.2vw;
         flex:1 36%;
         margin-bottom:6em;
@@ -286,8 +292,8 @@ p{font-family: "Arial Rounded MT Bold";}
         display:flex;
         flex-wrap:wrap;
         margin-top:2.34em;
-        margin-left:25vw;
-        width:74.2vw;
+        margin-left:21vw;
+        width:79vw;
         flex:1 36%;
         margin-bottom:6em;
         background-color:none;}

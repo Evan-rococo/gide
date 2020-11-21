@@ -4,22 +4,40 @@
 }
 
 h1 {font-family:"Arial Rounded MT Bold";
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
     margin: 0;
     padding: 0;}
 
 h2 {font-family:"Arial Rounded MT Bold";
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
     margin: 0;
     padding: 0;}
 
 h3 {font-family:"Arial Rounded MT Bold";
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
     color: black;
     line-height: 1.125;
     padding: 0;}
 
-h4 {font-family: "Ambiant Variable Trial";}
+h4 {font-family: "Learning Curve";
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 2px;
+    font-weight: bolder;}
+
+h5 {font-family:"Arial Rounded MT Bold";
+    -webkit-font-smoothing: antialiased;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;}
 
 p{
     font-family:"ABC Helveesti Trial";
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    color: black;
     line-height: 1.125;}
         
 a:link {text-decoration: none;}
@@ -75,16 +93,17 @@ a:visited {color: black;}
 
 
 
+
+
      /* desktop */
-  @media (min-width: 92em) {
-    .div-1 {background-color:none;
+  @media (min-width: 72em) {
+    .div-1 {background-color: none;
         width: 86vw;
         margin: auto;
         margin-top: 2em;
-        }
+        margin-bottom: 4em;}
 
-    .div {background-color:none;
-        margin-bottom: 6em;}
+    .div {background-color: none;}
     
     .div-menu {background-color:none;
         float: left;
@@ -97,61 +116,30 @@ a:visited {color: black;}
         width: 86vw;}
 
     
-    h1 {font-size:calc(3em + .67vw);}    
-    
-}
-
-
-
-
-     /* desktop */
-  @media (max-width: 92em) {
-    .div-1 {background-color:none;
-        width: 86vw;
-        margin: auto;
-        margin-top: 2em;}
-
-    .div {background-color:none;
-        margin-bottom: 6em;}
-    
-    .div-menu {background-color:none;
-        float: left;
-        height: 9vw;
-        text-align: left;
-        width: 0vw;}
-    
-    .div-logo {background-color:none;
-        text-align: center;
-        width: 86vw;}
-
-    
-    h1 {font-size:calc(3em + .67vw);} 
+    h1 {font-size:calc(3.34em + .67vw);} 
     
     .Sidebar{position:fixed;
-        top:10em;
+        margin-top:0em;
         opacity:100%;
         z-index:0;
-        left:5vw;
-        width:10em;
-        line-height:1.125em;
-        background-color: none}
+        left:0vw;
+        background-color: }
 
-    .genres {background-color: none; margin-bottom: 1.34em;}
-    .side-1 {background-color: none; margin-bottom: 1.34em;}
+    .genres {background-color: none; margin-bottom: 3vw;}
+    .side-1 {background-color: none; margin-bottom: 3vw;}
     .side-2 {background-color: none;}
 
 
 }
 
   /* laptop */
-  @media (max-width: 70em) {
-    .div-1 {background-color:none;
+  @media (max-width: 72em) {
+    .div-1 {background-color: none;
         width: 90vw;
         margin: auto;
-        margin-top: 3em;}
+        margin-top: 2em;}
 
-    .div {background-color:none;
-        margin-bottom: 6em;}
+    .div {background-color: none;}
     
     .div-menu {background-color:none;
         float: left;
@@ -160,7 +148,7 @@ a:visited {color: black;}
         width: 0vw;}
     
     .div-logo {background-color:none;
-        margin-bottom: 2em;
+        margin-bottom: 3em;
         float: right;
         text-align: center;
         width: 90vw;}
@@ -172,19 +160,18 @@ a:visited {color: black;}
         font-size: 1.67em;}  
     
     .Sidebar{position:fixed;
-        top:8em;
+        margin-top:-1vw;
         opacity:100%;
         z-index:0;
-        left:3vw;
-        width:10em;
+        left:0vw;
         line-height:1.125em;
         background-color: none}
     
     h3{font-size: 1.67em;
         margin: 0;}   
         
-    .genres {background-color: none; margin-bottom: 1.34em;}
-    .side-1 {background-color: none; margin-bottom: 1.34em;}
+    .genres {background-color: none; margin-bottom: 3vw;}
+    .side-1 {background-color: none; margin-bottom: 3vwm;}
     .side-2 {background-color: none;}
 
     
@@ -228,36 +215,26 @@ a:visited {color: black;}
         margin:0em;
         padding: 0em;}  
             
-    .Sidebar{top:7em;
+    .Sidebar{top:9em;
         border-radius:25px;
         left: 2vw;
-        background-color: white;
-        padding-top:1em;
-        padding-bottom:1em;
-        padding-left: 1em;
-        padding-right: 1em;
-        width: 12em;
-        height: 25em;
-        box-shadow:2px 6px 6px 0 #000}
+        background-color: none;
+        }
 
-    .genres {background-color: none; margin-bottom: 1.34em;}
-    .side-1 {background-color: none; margin-bottom: 1.34em;}
+    .genres {background-color: none; margin-bottom: 3vw;}
+    .side-1 {background-color: none; margin-bottom: 3vw;}
     .side-2 {background-color: none;}
+
+    
     }
 
 
     @media (max-height: 33em) {
-        .Sidebar{top:7em;
+        .Sidebar{top:9em;
             border-radius:25px;
             left: 2vw;
-            background-color: white;
-            padding-top:1em;
-            padding-bottom:1em;
-            padding-left: 1em;
-            padding-right: 1em;
-            width: 21.34em;
-            height: 14em;
-            box-shadow:2px 6px 6px 0 #000}
+            background-color: none;
+            }
             }
 
   /* mobile landscape */
@@ -295,19 +272,11 @@ a:visited {color: black;}
 
     .Sidebar{
         top: 27vw;
-        background-color: none;
-        border-radius:25px;
-        padding-left:3vw;
-        padding-top:.67em;
-        padding-bottom:.67em;
-        padding-right:3vw;
-        height:calc(73vw + 1em);
-        width:36.67vw;
-        font-size: 1.67em;
-        box-shadow:2px 6px 6px 0 #000}
+        background-color: red;
+        }
 
-    .genres {background-color: none; margin-bottom: 5vw;}
-    .side-1 {background-color: none; margin-bottom: 5vw;}
+    .genres {background-color: none; margin-bottom: 3vw;}
+    .side-1 {background-color: none; margin-bottom: 3vw;}
     .side-2 {background-color: none;}
     }
 
@@ -354,9 +323,13 @@ a:visited {color: black;}
         left: 1vw;
         box-shadow:2px 6px 6px 0 #000}
 
-    .genres {background-color: none; margin-bottom: 5vw;}
-    .side-1 {background-color: none; margin-bottom: 5vw;}
+    .genres {background-color: none; margin-bottom: 3vw;}
+    .side-1 {background-color: none; margin-bottom: 3vw;}
     .side-2 {background-color: none;}
      /* ends default shit */
 }
-    
+
+
+
+
+

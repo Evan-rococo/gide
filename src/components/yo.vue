@@ -9,20 +9,20 @@
 
       <div class="column-1"> 
       <div><div class="genres">
-      <g-link to="/genre/"><h3>NEW STUFF</h3></g-link>
-			<g-link to="/boogie/"><h3>BOOGIE</h3></g-link>
-			<g-link to="/esoteric/"><h3>ESOTERIC</h3></g-link>
-			<g-link to="/pop/"><h3>POP MUSIC</h3></g-link>
-			<g-link to="/reggae/"><h3>REGGAE</h3></g-link>
-			<g-link to="/tropical/"><h3>TROPICAL</h3></g-link></div></div></div>
+      <g-link to="/genre/">NEW STUFF</g-link><br>
+			<g-link to="/boogie/">BOOGIE</g-link><br>
+			<g-link to="/esoteric/">ESOTERIC</g-link><br>
+			<g-link to="/pop/">POP MUSIC</g-link><br>
+			<g-link to="/reggae/">REGGAE</g-link><br>
+			<g-link to="/tropical/">TROPICAL</g-link></div></div></div>
 
 			<div class="column-2">
       <div class="side-1">
-			<g-link to="/faq/"><h3>FAQ</h3></g-link>
-			<g-link to="/contact/"><h3>CONTACT</h3></g-link></div>
+			<g-link to="/faq/">FAQ</g-link><br>
+			<g-link to="/contact/">CONTACT</g-link></div>
 			<div class="side-2">
-			<g-link to="/cart/"><h3>CART (0)</h3></g-link>
-			<g-link><h3>SEARCH</h3></g-link></div>
+			<g-link to="/cart/">CART (0)</g-link><br>
+			<g-link>SEARCH</g-link></div>
 
 		
     </div></div></div></div>
@@ -30,9 +30,9 @@
 			<h2 style="height:1em">MENU</h2>
 		</div></div>
 	
-    <div class="div div-logo"><g-link to="/"><h1>HOT REQUEST</h1></g-link></div>
+    <div class="div div-logo"><g-link to="/"><h1>HOT REQUEST</h1></g-link></div><div class="blur"><div>
 </div></div>
-	</yo>
+	</yo></div>
 </div>
 </template>
 
@@ -54,6 +54,7 @@ data: () => ({
 </script>
 
 <style>
+.blur {background-color: orange; height: 30em; top:0; border-radius: 25px; width: 120vw; margin-top: -34em; box-shadow: 0px 0px 23vw 120px green; z-index:0; position: fixed; margin-left: -2em;mix-blend-mode: multiply}
 
 body {
   font-family:"ABC Helveesti Trial";
@@ -85,23 +86,61 @@ body {
 
 .row {
   display: flex;
-  flex-wrap: wrap;}
+  flex-wrap: wrap;
+  border-radius: 25px;
+  background-color:none;
+  padding: 3vw;
+  padding-bottom: 4vw;
+  padding-top: 3vw;
+  box-shadow:none}
 
 .column-1{ background-color: none;
-  margin-right: 3vw;}
+  float: left;}
 
-.column-2{ background-color: none;}
+.column-2{ background-color:none;
+  float: left;}
+.side-1 {text-align: right;}
+.side-2 {text-align: right;}
 
 @media screen and (min-height: 33em) {
-  .row {flex-direction: column;}
+    .row {flex-direction: column;
+      padding: 3vw;
+      padding-top: 5vw;
+      padding-bottom: 5vw;}
 
-  .column-1{ background-color: none;
-    width: 10em;}
+    .column-1{ background-color: none;
+      float: left;}
+
+    .column-2{ background-color:none;
+      float: left;}
+
+    .side-1 {text-align: left;}
+    .side-2 {text-align: left;}
+
+  
 }
 
 
 
- @media(min-width: 98em) {
+
+
+ @media(min-width: 72em) {
+   .row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:none;}
+
+       .column-1 {
+    font-size:calc(.5vw + 1.34em);
+    font-family: "Arial Rounded MT Bold";
+    line-height: 1.125;
+    background-color: none;}
+
+.column-2 {
+  font-size:calc(.5vw + 1.34em);
+  font-family: "Arial Rounded MT Bold";
+  line-height: 1.125;
+  background-color: crimson;}
   
          .Hamburger{
         position:fixed;
@@ -114,22 +153,15 @@ body {
     .Sidebar{
         position:fixed;
         top:8em;
-        opacity:100%;
+        opacity:0%;
         z-index:0;
-        left:5vw;
-        width:10em;
         line-height:1.125em;
         background-color:none}
-
-        h3{
-          font-size: 1.67em;
-          margin: 0;
-          line-height: 1.125;
-        }
   }
 
 
-     @media(max-width: 98em) {
+     @media(max-width: 72em) {
+       .row{background-color: none;}
 
          .Hamburger{
         position:fixed;
@@ -142,21 +174,31 @@ body {
     .Sidebar{
         position:fixed;
         top:8em;
-        opacity:100%;
-        z-index:0;
-        left:7vw;
-        width:10em;
+        opacity:0%;
         line-height:1.125em;
         background-color:none}
-
-        h3{
-          font-size: 1.67em;
-          margin: 0;
-          line-height: 1;
-        }
   }
 
-@media(max-width: 70em) {
+  @media(max-width: 72em) {
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  background-color:white;
+  padding: 3vw;
+  padding-bottom: 4vw;
+  padding-top: 3vw;
+  box-shadow:2px 6px 6px 0 #000}
+  
+  .genres {
+    font-size:calc(1.67vw + .34em);
+    font-family: "Arial Rounded MT Bold";
+    line-height: 1.125;}
+
+.column-2 {
+  font-size:calc(1.67vw + .34em);
+  font-family: "Arial Rounded MT Bold";
+  line-height: 1.125;}
 
          .Hamburger{
         position:fixed;
@@ -171,6 +213,16 @@ body {
 
 
 @media(max-width: 48em) {
+    .genres {
+    font-size:calc(1.67vw + .67em);
+    font-family: "Arial Rounded MT Bold";
+    line-height: 1.125;}
+
+.column-2 {
+  font-size:calc(1.67vw + .67em);
+  font-family: "Arial Rounded MT Bold";
+  line-height: 1.125;}
+  
 
   .Sidebar{
         transform:translate3d(-300%,0,0);
@@ -181,35 +233,33 @@ body {
         z-index:6;
         margin-top:0em;
         left:2.34vw;
-        background-color: none;
+        background-color: none;}
 
-    }
     .Sidebar.open{
         transform:translate3d(0,0,0);
         z-index:6;
-        margin-top:0em
-    }
+        margin-top:0em}
+  }
+@media(min-width: 48em){
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  background-color: none;
+  padding: 3vw;
+  padding-bottom: 4vw;
+  padding-top: 3vw;
+  box-shadow:none;}
   }
 
  @media(max-height: 33em) {
+   
 
-
-.Hamburger{
-        opacity:100%;
-        z-index:6;
-        margin-top: 0em;
-        left:2.34vw;
-        background-color: none;}
   }
    
 
 @media(max-width: 24em) {
 
-       .Hamburger{
-        opacity:100%;
-        z-index:6;
-        margin-top: 0em;
-        left:2.34vw;
-        background-color: none;}
+       
       }
 </style>

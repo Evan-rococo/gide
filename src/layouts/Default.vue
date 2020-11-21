@@ -20,15 +20,12 @@ export default {
 
 
 <style>
-.body {
-  
-
-}
+.body {}
 
 .layout {
   margin: 0 auto;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 0vw;
+  padding-right: 0vw;
   background-color:none;
 }
 
@@ -40,7 +37,6 @@ export default {
 }
 
 .nav__link {
-  margin-left: 20px;
   text-decoration: none;
   font-family:"Arial Rounded MT Bold";
 }
