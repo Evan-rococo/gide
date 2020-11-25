@@ -8,21 +8,21 @@
       <div class="row">
 
       <div class="column-1"> 
-      <div><div class="genres">
+      <div class="genres"><h3>
       <g-link to="/genre/">NEW STUFF</g-link><br>
 			<g-link to="/boogie/">BOOGIE</g-link><br>
 			<g-link to="/esoteric/">ESOTERIC</g-link><br>
-			<g-link to="/pop/">POP MUSIC</g-link><br>
+			<g-link to="/pop/">POP MUSIC</g-link></br>
 			<g-link to="/reggae/">REGGAE</g-link><br>
-			<g-link to="/tropical/">TROPICAL</g-link></div></div></div>
+			<g-link to="/tropical/">TROPICAL</g-link></h3></div></div>
 
 			<div class="column-2">
-      <div class="side-1">
+      <div class="side-1"><h3>
 			<g-link to="/faq/">FAQ</g-link><br>
-			<g-link to="/contact/">CONTACT</g-link></div>
-			<div class="side-2">
+			<g-link to="/contact/">CONTACT</g-link></h3></div>
+			<div class="side-2"><h3>
 			<g-link to="/cart/">CART (0)</g-link><br>
-			<g-link>SEARCH</g-link></div>
+			<g-link>SEARCH</g-link></h3></div>
 
 		
     </div></div></div></div>
@@ -131,16 +131,13 @@ body {
   background-color:none;}
 
        .column-1 {
-    font-size:calc(.5vw + 1.34em);
-    font-family: "Arial Rounded MT Bold";
     line-height: 1.125;
     background-color: none;}
 
 .column-2 {
-  font-size:calc(.5vw + 1.34em);
   font-family: "Arial Rounded MT Bold";
   line-height: 1.125;
-  background-color: crimson;}
+  background-color: none;}
   
          .Hamburger{
         position:fixed;
@@ -163,20 +160,15 @@ body {
      @media(max-width: 72em) {
        .row{background-color: none;}
 
-         .Hamburger{
-        position:fixed;
-        margin-top:-9em;
-        opacity:0;
-        z-index:6;
-        height:1em;
-        margin-left:2.5vw
-    }
+      .Hamburger{
+        opacity:0;}
+
     .Sidebar{
         position:fixed;
         top:8em;
         opacity:0%;
         line-height:1.125em;
-        background-color:none}
+        background-color: none}
   }
 
   @media(max-width: 72em) {
@@ -184,23 +176,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   border-radius: 25px;
-  background-color:white;
+  background-color: none;
   padding: 3vw;
   padding-bottom: 4vw;
   padding-top: 3vw;
   box-shadow:2px 6px 6px 0 #000}
   
-  .genres {
-    font-size:calc(1.67vw + .34em);
-    font-family: "Arial Rounded MT Bold";
-    line-height: 1.125;}
+  .genres {line-height: 1.125;}
 
-.column-2 {
-  font-size:calc(1.67vw + .34em);
-  font-family: "Arial Rounded MT Bold";
+.column-2 {;
   line-height: 1.125;}
 
-         .Hamburger{
+        .Hamburger{
         position:fixed;
         margin-top:-9em;
         opacity:0;
@@ -213,32 +200,7 @@ body {
 
 
 @media(max-width: 48em) {
-    .genres {
-    font-size:calc(1.67vw + .67em);
-    font-family: "Arial Rounded MT Bold";
-    line-height: 1.125;}
 
-.column-2 {
-  font-size:calc(1.67vw + .67em);
-  font-family: "Arial Rounded MT Bold";
-  line-height: 1.125;}
-  
-
-  .Sidebar{
-        transform:translate3d(-300%,0,0);
-    }
-    
-    .Hamburger{
-        opacity:100%;
-        z-index:6;
-        margin-top:0em;
-        left:2.34vw;
-        background-color: none;}
-
-    .Sidebar.open{
-        transform:translate3d(0,0,0);
-        z-index:6;
-        margin-top:0em}
   }
 @media(min-width: 48em){
 .row {

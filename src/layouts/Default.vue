@@ -9,10 +9,12 @@
 <script>
 import Form from '~/components/Form.vue'
 import yo from '~/components/yo.vue'
+import footer from '~/components/footer.vue'
 export default {
   components: {
     Form,
-    yo
+    yo,
+    footer,
   }
 }
 </script>
@@ -24,8 +26,8 @@ export default {
 
 .layout {
   margin: 0 auto;
-  padding-left: 0vw;
-  padding-right: 0vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
   background-color:none;
 }
 

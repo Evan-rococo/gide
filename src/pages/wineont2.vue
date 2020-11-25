@@ -9,21 +9,19 @@
   </div>
 
 
-  <div class="tits"><span>
+  <div class="tits"><span><h2>
       <div class="areola">"STAND UP FOR YOUR RIGHTS" LP</div>
 			<div class="areola">FEEL IT</div>
 			<div class="areola">CHARLIZ AG</div>
 			<div class="areola">SOUTH AFRICA, '89</div>
-			<div class="areola">VINYL VG+ SLEEVE VG</div></span>
+			<div class="areola">VINYL VG+ SLEEVE VG</div></h2></span>
   </div>
 
 
-  <div class="text"><span><p>
-				 A sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness.
-			<br><br>
-				Death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion..
-			<br><br>
-				 Usually in a poignant but solemn manner.
+  <div class="text"><div class="eso"></div><span><p>
+				A sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness.
+        Death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion..
+			  Usually in a poignant but solemn manner.
 			<br><br>
 				Ballads are generally melodic enough to get the listener's attention but solemn manner. Ballads are generally melodic enough to get the listener's attention.
 			</p></span>
@@ -32,21 +30,21 @@
 
   <div class="clips"><span><audio id="nyan" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg">
 				Your browser does not support the audio element. </audio>
-				<a class="btn" id="nyan-btn">LIBREVILLE (ROUGH MIX)</a><br>
+				<a class="btn" id="nyan-btn"><h3>LIBREVILLE (ROUGH MIX)</h3></a>
 				<audio id="nyan" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg">
 				Your browser does not support the audio element. </audio>
-				<a class="btn" id="nyan-btn">EKWEGHELE</a><br>
+				<a class="btn" id="nyan-btn"><h3>EKWEGHELE</h3></a>
 				<audio id="nyan" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg">
 				Your browser does not support the audio element. </audio>
-				<a class="btn" id="nyan-btn">NEW CASINO</a><br></span>
+				<a class="btn" id="nyan-btn"><h3>NEW CASINO</h3></a></span>
   </div>
 
 
   <div class="cart"><span><div>
-				<h2>139€</h2>
+				<h2 style="font-family:Nocturne Serif; font-weight:900;">139€</h2>
 				<input type="submit" style="border-radius: 25px; padding:.34em; padding-right:.8em; padding-left:.8em;" value="ADD TO CART">
 			</div>
-			<section id="accordion" style="margin-top:.67em;">
+			<section id="accordion">
 			<div>
 				<input type="checkbox" id="conditions"/>
 				<label for="conditions"><h3>CONDITIONS</h3></label>
@@ -82,9 +80,11 @@
 
 <script>
 import yo from '~/components/yo.vue'
+import footer from '~/components/footer.vue'
 export default {
   components: {
-    yo
+    yo,
+    footer
   }
 }
 </script>
@@ -92,20 +92,14 @@ export default {
 <style>
 * {
   box-sizing: border-box;}
-     input{
-        background-color:red;
-        font-size:1.67em;
-        font-family:Arial Rounded MT Bold;
-        border:0;
-        margin-left:-.8em
-    }
+
 
 
 * {box-sizing: border-box;}
 
 .wrapper {
   display: flex;
-  width: 70vw;
+  width: 76vw;
   margin-left: 21vw;
   flex-wrap: wrap;}
 
@@ -117,47 +111,11 @@ export default {
   .title, .product-img {
     flex: 100%;}
 
-  .image {
-  order: 1;
-  flex: 0 0 40%;
-  background-color:white;    
-}
-.tits {
-  order: 2;
-  background-color: white;
-  margin-left: 1vw;
-  flex: 0 0 40.5vw;
-  height: 10em;
-  font-size:calc(1.67vw + .34em);
-  font-family: "Arial Rounded MT Bold";
-}
 
-.areola {margin-bottom:1.34vw; line-height: .92;}
-.text {
-  order: 4;
-  margin-left: 1vw;
-  margin-top: -9em;
-  background-color:white;  
-  flex: 0 0 40.5vw;}
 
-p {font-size:calc(.67vw + .67em);
-  margin-top: -.1vw;}
 
-.clips {
-  order: 3;
-  line-height: 1.34;
-  background-color: white;
-  flex: 0 0 40%;
-  text-align: right;
-  font-size:calc(1.67vw + .34em);
-  font-family: "Arial Rounded MT Bold";
-}
-.cart {
-  order: 5;
-  background-color: white;  
-  flex: 0 0 40.5vw;
-  margin-left: 29vw;
-}
+
+
 
 @media (min-width: 72em) {
 
@@ -165,82 +123,7 @@ p {font-size:calc(.67vw + .67em);
 
 
 @media (max-width: 72em) {
-  .wrapper {
-    background-color: none;
-    display: flex;
-    width: 75vw;
-    margin-left: 21vw;
-    flex-wrap: wrap;}
 
-  .image {
-    order: 1;
-    flex: 0 0 33vw;}
-
-  .tits {
-    order: 2;
-    margin-left: 1.5vw;
-    font-size:calc(2vw + .34em);
-    font-family: "Arial Rounded MT Bold";
-    flex: 0 0 40.5vw;
-    background-color: white;}
-
-  .text {
-    order: 3;
-    margin-top: 1.5vw;
-    margin-left: 0; 
-    flex: 0 0 100%;
-    background-color: white;}
-
-  p {font-size:calc(1.34vw + .67em);
-    margin-top: -.1vw;
-    margin-bottom: -.1vw;}
-
-  .clips {
-    order: 4;
-    margin-top: 1.5vw;
-    line-height: 1.67;
-    font-size:calc(2vw + .34em);
-    flex: 0 0 100%;
-    text-align: right;}
-
-  .cart {
-    order: 5;
-    margin-top: 1.5vw;
-    background-color: white;  
-    flex: 0 0 75vw;
-    margin-left: 0%;}
-
-  #accordion input{
-    display:none}
-
-  #accordion label{
-    cursor:pointer;
-    display:block;
-    background:0 0;}
-
-  #accordion input:checked+label{
-    background:0 0;
-    text-align:left}
-
-  #accordion article{
-    background:silver;
-    border-radius:25px;
-    height:0;
-    overflow:hidden;
-    margin-left:-16vw;
-    z-index:10;
-    text-align:left}
-
-  #accordion article p{
-    text-align:left;
-    margin-top: -1vw;}
-
-    #accordion input:checked~article{
-      box-shadow:0 3px 3vw .67vw #000;
-      height:auto;
-      padding: 1vw;
-      margin-bottom:3em;
-      text-align:left}
 }
 
 
@@ -254,130 +137,150 @@ p {font-size:calc(.67vw + .67em);
 
   .image {
     order: 1;
-    flex: 0 0 44vw;
+    flex: 0 0 42vw;
     background-color: none;}
 
   .tits {
     order: 2;
-    margin-left: 1.5vw;
-    font-size:3.34vw;
-    background-color: white;
-    flex: 0 0 44.5vw; }
+    margin-left: 4vw;
+    height: 22.67vw;
+    background-color: none;
+    flex: 0 0 44vw; }
 
   .text {
     order: 3;
-    margin-top: 1.5vw;
+    margin-left: 0;
+    margin-top: -17vw;
+    mix-blend-mode: darken;
     background-color: white;  
     flex: 0 0 100%;}
 
-  p {font-size:calc(1.34vw + .67em);
-    margin-top: -.1vw;
+  .eso {
+    shape-outside: inset(0px 0px 0px 0px);
+    background-color: yellow; opacity: 0%;
+  /* clip-path: inset(0 0 10px 0); */
+  /* background-color: red; */
+    width: 46vw;
+    height: calc(12vw + 2em);
+    float: left;
+    margin-top:.34em;}
+
+  p {margin-top: -.1vw;
     margin-bottom: -.1vw;}
 
   .clips {
     order: 4;
-    margin-top: 1.5vw;
-    font-size: 3.34vw;
-    background-color: white;
+    margin-top: 2vw;
+    background-color: none;
     flex: 0 0 100%;
     text-align: right;}
 
   .cart {
     order: 5;
-    margin-top: 1.5vw; 
-    font-size: 2vw; 
+    margin-top: 2vw;
     flex: 0 0 90vw;
-    background-color: white;
-    margin-left: 0%;}
-
-  #accordion input{
-    display:none}
-
-  #accordion label{
-    cursor:pointer;
-    display:block;
-    background:0 0;}
-
-  #accordion input:checked+label{
-    background:0 0;
-    text-align:left}
-
-  #accordion article{
-    background:silver;
-    border-radius:25px;
-    height:0;
-    margin-top: 1.5vw;
-    overflow:hidden;
-    margin-left:0vw;
-    z-index:10;
-    text-align:left}
-
-  #accordion article p{
-    padding-right:.5em;
-    padding-left:1em;
-    padding-top:1em;
-    padding-bottom:.5em;
-    text-align:left}
-
-  #accordion input:checked~article{
-    box-shadow:0 3px 3vw .67vw #000;
-    height:auto;
-    margin-bottom:3em;
-    text-align:left}
+    background-color: none;
+    margin-left: 0%;} 
 }
 
 
 @media (max-width: 33em) {
+  .areola { background-color: none;}
+  
+  h2{ background-color:none;}
+
+  h3 {font-size: 4vw;}
+
+  p {font-size: 3.67vw;
+    line-height: 4vw;
+    margin: 0;}
+
+  input{
+    background-color: red;
+    font-size: 5vw;
+    font-family:Arial Rounded MT Bold;
+    border:0;
+    margin-left:-.67vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;}
+
   .image {
     order: 1;
     flex: 0 0 100%;
-    background-color:white;}
+    background-color:none;}
 
   .tits {
     order: 2;
     float: left;
     margin-left: 0;
-    font-size:calc(2.67vw + .67em);
-    background-color:white;
-    flex: 0 0 100%;
     margin-top: 3vw;
-    height: 28vw;}
+    background-color: none;
+    flex: 0 0 100%;
+    height: 27vw;}
+
+  .eso {
+    shape-outside: inset(0px 0px 0px 0px);
+    background-color: yellow; opacity: 0%;
+  /* clip-path: inset(0 0 10px 0); */
+  /* background-color: red; */
+    width: 0;
+    height: 0;
+    float: left;
+    margin-top:0em;}
 
 
   .text {
     order: 3;
+    mix-blend-mode: darken;
     margin-top: 3vw;
     background-color: white;  
     flex: 0 0 100%;}
 
-  p {font-size:calc(1.67vw + .67em);
-    margin-top: -.05vw;
-    margin-bottom: -.05vw;}
-
   .clips {
     order: 4;
     margin-top: 3vw;
-    line-height: 1.34;
-    font-size:calc(2.67vw + .67em);
-    background-color:white;
+    background-color: none;
     text-align: right;
     flex: 0 0 100%;}
 
   .cart {
     order: 5;
     margin-top: 3vw;
-    background-color: white;  
+    background-color: none;  
     flex: 0 0 100%;}
 
-  #accordion article{
-    background:silver;
+ #accordion article{
+    background: silver;
     border-radius:25px;
-    margin-top: 1.5vw;
-    width:90vw;
     height:0;
+    margin-top: 0;
     overflow:hidden;
+    margin-left:0vw;
     z-index:10;
     text-align:left}
+
+  #accordion article p{
+    padding-right: 3vw;
+    padding-left: 3vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    text-align:left}
+
+  #accordion input:checked~article{
+    box-shadow:0 3px 3vw .67vw #000;
+    height:auto;
+    margin-top: 2vw;
+    margin-bottom:6vw;
+    text-align:left}
+
+  input{
+    background-color: red;
+    font-size: 5vw;
+    font-family:Arial Rounded MT Bold;
+    border:0;
+    margin-left:-3.67vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;}
 
 }
 

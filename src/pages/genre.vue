@@ -10,7 +10,7 @@
 
 	<div class="product-card">
 		<div class="product-image">
-			<g-link to="/product/">
+			<g-link to="/wineont2/">
 			<g-image style="width:100%" src="https://res.cloudinary.com/winenot/image/upload/v1601897504/z8_v2hh9u.jpg"/>
 			</g-link>
 		</div>
@@ -198,7 +198,7 @@ export default {
 
 <style scoped>
 
-p{font-family: "Arial Rounded MT Bold";}
+p{font-family: "Nocturne Serif";;}
 
 .products{
     display:flex;

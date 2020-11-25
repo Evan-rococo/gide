@@ -53,7 +53,7 @@ export default {
 .home-links a {
   margin-right: 1em;}
 
-@media (min-width: 70em){
+@media (min-width: 72em){
   /* Create two equal columns that floats next to each other */
 .column-index {
   float: left;
@@ -98,7 +98,6 @@ export default {
     background-color:none;}
 
   p { margin-left: 37vw;
-    font-size: 1.34em;
     background-color: none;}
 
   h4 {
@@ -119,52 +118,65 @@ export default {
 
 
 
-@media (max-width: 70em){
-  img {width: 70vw;}
+@media (max-width: 72em){
+   /* Create two equal columns that floats next to each other */
+.column-index {
+  float: left;
+  width: 50%;
+  
+}
 
-  iframe {width: 70vw;
-    height: 66vw;
-    border-radius: 25px;
-    margin-left:27vw;
-    margin-bottom: 9em;
-    margin-top: 5vw;
-    box-shadow: 0px 0px 6vw 7px green;}
-
-.app{display: grid;
-    background-color: none;
-    margin-bottom:0em;
-    width: 70vw;}
-
-  .row-index:after {
+/* Clear floats after the columns */
+.row-index:after {
   content: "";
   display: table;
   clear: both;
 }
 
-  .row-index {background-color: none;
-    top:0;}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
-.left, .right{display: contents;}
+.home-links a {
+  margin-right: 1em;}
 
-p { width: 70vw;
-  margin-left: 27vw;
-  margin-bottom: 5vw;
-  font-size: 1.34em;
-  }
-
-h4 {
-  font-size: 3.27vw;
-  margin: 0;
-  margin-top: .67vw;}
-
-.column-index {
-    float: left;
-    width: 50%;
+   iframe {
     width: 70vw;
-    margin-top: 0vw;
-    margin-bottom: 1.67em;
-    margin-left: 27vw;
+    height: 35vw;
+    border-radius: 25px;
+    box-shadow: 0px 0px 6vw 7px green;
+    margin-left:25.67vw;
+    margin-bottom: 9em;
+    margin-top: 5vw;}
+
+  .row-index {
+  margin-top:2em;
+  margin-left: 27vw;
+  margin-right: 3vw;
+  margin-bottom: 1.67em;
+  background-color: none;}
+
+  .app {
+    width: 100%;
+    background-image: ;
     background-color: none;}
+
+   .column-index {
+    background-color:none;}
+
+  p { margin-left: 37vw;
+    background-color: none;}
+
+  h4 {
+    margin-top: .34em;
+    background-color: none;
+    margin: auto;
+    font-size: 1.45vw;}
+  }
+  
+.pointer {cursor: pointer;}
+
+* {
+  box-sizing: border-box;
+
 }
 
 
@@ -193,7 +205,7 @@ h4 {
     margin-bottom: 5.67vw;
     background-color: none;}
 
-p {font-size: 4.34vw;
+p {
   margin-left:0;
   width: 90vw;}
 
@@ -219,7 +231,6 @@ p {font-size: 4.34vw;
 
 .app{display: grid;
 width: 90vw;
-margin-left: vw;
   margin: auto;}
 
 h4 {
@@ -233,8 +244,8 @@ h4 {
     margin-bottom: 5.67vw;
     background-color: none;}
 
-p {font-size: 4.34vw;
-  
+p {
+    line-height: 4vw;
     margin: 0;}
 
     iframe {width: 90vw;
@@ -268,7 +279,7 @@ iframe {width: 90vw;
   margin: 0;
   margin-top: .67vw;}
 
-  p {font-size: 5vw;}
+  p {}
 
 }
 </style>

@@ -5,33 +5,25 @@
 
 h1 {font-family:"Arial Rounded MT Bold";
     -webkit-font-smoothing: antialiased;
-    font-weight: 100;
+    font-weight: 400;
     margin: 0;
     padding: 0;}
 
 h2 {font-family:"Arial Rounded MT Bold";
     -webkit-font-smoothing: antialiased;
-    font-weight: 100;
+    font-weight: 400;
     margin: 0;
     padding: 0;}
 
 h3 {font-family:"Arial Rounded MT Bold";
     -webkit-font-smoothing: antialiased;
-    font-weight: 100;
+    font-weight: 400;
     color: black;
     line-height: 1.125;
     padding: 0;}
 
-h4 {font-family: "Learning Curve";
-    -webkit-font-smoothing: antialiased;
-    letter-spacing: 2px;
-    font-weight: bolder;}
-
-h5 {font-family:"Arial Rounded MT Bold";
-    -webkit-font-smoothing: antialiased;
-    font-weight: lighter;
-    margin: 0;
-    padding: 0;}
+h4 {font-family: "Nocturne Serif";
+    -webkit-font-smoothing: antialiased;}
 
 p{
     font-family:"ABC Helveesti Trial";
@@ -97,237 +89,664 @@ a:visited {color: black;}
 
      /* desktop */
   @media (min-width: 72em) {
-    .div-1 {background-color: none;
-        width: 86vw;
-        margin: auto;
-        margin-top: 2em;
-        margin-bottom: 4em;}
+ /* Header */
+ .div-1 {background-color: none;
+    width: 90vw;
+    margin: auto;
+    margin-top: 2em;}
 
-    .div {background-color: none;}
+.div {background-color: none;}
+
+.div-menu {background-color:none;
+    float: left;
+    height: 9vw;
+    text-align: left;
+    width: 0vw;}
+
+.div-logo {background-color:none;
+    margin-bottom: 3em;
+    float: right;
+    text-align: center;
+    width: 90vw;}
+
+
+/* Sidebar */
+.Sidebar{position:fixed;
+    margin-top:-1vw;
+    opacity:100%;
+    z-index:0;
+    left:0vw;
+    line-height:1.125em;
+    background-color: none}
+
+.genres {background-color: none; margin-bottom: 1em;}
+.side-1 {background-color: none; margin-bottom: 1em;}
+.side-2 {background-color: none;}
+
+/* Type */
+h1 {font-family:"Arial Rounded MT Bold";
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size:calc(1.67em + 3vw);}
+
+h2 {font-family:"Arial Rounded MT Bold";
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 1.67em;}
+
+h3 {font-family:"Arial Rounded MT Bold";
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: .67vw;}
+
+h4 {
+    -webkit-font-smoothing: antialiased;}
+
+p{
+    font-family:"ABC Helveesti Trial";
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 1.34em;
+    line-height: 1.125;}
+
+ input{
+background-color: red;
+font-size: 1.67em;
+font-family:Arial Rounded MT Bold;
+border:0;
+margin-left:-2vw;
+margin-bottom: 1vw;
+margin-top: 1vw;}
+
+/* Wineont2 */
+.wrapper {
+    background-color: none;
+    display: flex;
+    width: 79vw;
+    margin-left: 21vw;
+    flex-wrap: wrap;}
+
+.image {
+    order: 1;
+    flex: 0 0 24.34em;}
+
+.tits {
+    order: 2;
+    margin-left: 1em;
+    height: 12em;
+    font-family: "Arial Rounded MT Bold";
+    flex: 0 0 29.34em;
+    background-color: none;}
+
+.text {
+    order: 4;
+    margin-top: -12em;
+    margin-left: 1em; 
+    flex: 0 0 29.34em;
+    background-color: none;}
+
+p {
+    margin-top: -.1vw;
+    margin-bottom: -.1vw;}
+
+.clips {
+    order: 3;
+    margin-top: 1em;
+    line-height: 1.67;
+    flex: 0 0 24.34em;
+    background-color: none;
+    text-align: right;}
+
+.cart {
+    order: 5;
+    margin-top: 1em;
+    margin-left: 25.34em;
+    background-color: none;  
+    flex: 0 0 29.34em;
+    float: right;}
+
+.areola {margin-bottom: .34em; line-height: .9;}
+
+    #accordion input{display:none}
+
+    #accordion label{
+        cursor:pointer;
+        display:block;
+        background:0 0;}
     
-    .div-menu {background-color:none;
-        float: left;
-        height: 9vw;
-        text-align: left;
-        width: 0vw;}
+    #accordion input:checked+label{
+        background:0 0;
+        text-align:left}
     
-    .div-logo {background-color:none;
-        text-align: center;
-        width: 86vw;}
-
+    #accordion article{
+        background:silver;
+        border-radius:25px;
+        height:0;
+        margin-top: 1.5vw;
+        overflow:hidden;
+        margin-left:0vw;
+        z-index:10;
+        text-align:left}
     
-    h1 {font-size:calc(3.34em + .67vw);} 
+    #accordion article p{
+        padding-right:2vw;
+        padding-left:2vw;
+        padding-top:2vw;
+        padding-bottom:2vw;
+        text-align:left}
     
-    .Sidebar{position:fixed;
-        margin-top:0em;
-        opacity:100%;
-        z-index:0;
-        left:0vw;
-        background-color: }
-
-    .genres {background-color: none; margin-bottom: 3vw;}
-    .side-1 {background-color: none; margin-bottom: 3vw;}
-    .side-2 {background-color: none;}
-
-
+    #accordion input:checked~article{
+        box-shadow:0 3px 3vw .67vw #000;
+        height:auto;
+        margin-top: 2vw;
+        margin-bottom:6vw;
+        text-align:left}
+        
 }
 
-  /* laptop */
+  /* Laptop */
   @media (max-width: 72em) {
-    .div-1 {background-color: none;
-        width: 90vw;
-        margin: auto;
-        margin-top: 2em;}
+    /* Header */
+        .div-1 {background-color: none;
+            width: 90vw;
+            margin: auto;
+            margin-top: 2em;}
 
-    .div {background-color: none;}
+        .div {background-color: none;}
     
-    .div-menu {background-color:none;
-        float: left;
-        height: 9vw;
-        text-align: left;
-        width: 0vw;}
+        .div-menu {background-color:none;
+            float: left;
+            height: 9vw;
+            text-align: left;
+            width: 0vw;}
     
-    .div-logo {background-color:none;
-        margin-bottom: 3em;
-        float: right;
-        text-align: center;
-        width: 90vw;}
+        .div-logo {background-color:none;
+            margin-bottom: 3em;
+            float: right;
+            text-align: center;
+            width: 90vw;}
 
-    h1 {font-size:calc(1.67em + 3vw);}
-    
-    h2 {background-color: none;
-        margin-top: 1em;
-        font-size: 1.67em;}  
-    
-    .Sidebar{position:fixed;
-        margin-top:-1vw;
-        opacity:100%;
-        z-index:0;
-        left:0vw;
-        line-height:1.125em;
-        background-color: none}
-    
-    h3{font-size: 1.67em;
-        margin: 0;}   
+
+    /* Sidebar */
+        .Sidebar{position:fixed;
+            margin-top:-1vw;
+            opacity:100%;
+            z-index:0;
+            left:0vw;
+            line-height:1.125em;
+            background-color: none}
+ 
+        .genres {background-color: none; margin-bottom: 2vw;}
+        .side-1 {background-color: none; margin-bottom: 2vw;}
+        .side-2 {background-color: none;}
         
-    .genres {background-color: none; margin-bottom: 3vw;}
-    .side-1 {background-color: none; margin-bottom: 3vwm;}
-    .side-2 {background-color: none;}
+    /* Type */
+        h1 {font-family:"Arial Rounded MT Bold";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            font-size:calc(1.67em + 3vw);}
 
+        h2 {font-family:"Arial Rounded MT Bold";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            font-size:calc(1.34vw + .67em);}
+
+        h3 {font-family:"Arial Rounded MT Bold";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            font-size:calc(1.34vw + .5em);
+            margin: 0;
+            margin-bottom: .67vw;}
+
+        h4 {font-family:;
+            -webkit-font-smoothing: antialiased;}
+
+        p{
+            font-family:"ABC Helveesti Trial";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            font-size:calc(1.34vw + .5em);
+            line-height: 1.125;}
+
+         input{
+    background-color: red;
+    font-size:calc(1.34vw + .67em);
+    font-family:Arial Rounded MT Bold;
+    border:0;
+    margin-left:-2vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;}
+
+/* Wineont2 */
+        .wrapper {
+            background-color: none;
+            display: flex;
+            width: 79vw;
+            margin-left: 21vw;
+            flex-wrap: wrap;}
     
+        .image {
+            order: 1;
+            flex: 0 0 34vw;}
+    
+        .tits {
+            order: 2;
+            height: 21vw;
+            margin-left: 1.5vw;
+            font-family: "Arial Rounded MT Bold";
+            flex: 0 0 40.5vw;
+            background-color: none;}
+    
+        .text {
+            order: 4;
+            margin-top: -26vw;
+            margin-left: 35.5vw; 
+            flex: 0 0 40.5vw;
+            background-color: none;}
+    
+        p {
+            margin-top: -.1vw;
+            margin-bottom: -.1vw;}
+    
+        .clips {
+            order: 3;
+            margin-top: 1.5vw;
+            line-height: 1.67;
+            flex: 0 0 34vw;
+            text-align: right;}
+    
+        .cart {
+            order: 5;
+            margin-top: 1.5vw;
+            margin-left: 35.5vw; 
+            background-color: none;  
+            flex: 0 0 40.5vw;}
+
+        .areola {margin-bottom: .67vw; line-height: .9;}
+    
+            #accordion input{display:none}
         
-    }
-
-
-  /* mobile landscape */
-  @media (max-width: 48em) {
-    .div-1 {
-        background-color:none;
-        width: 90vw;
-        margin-left: 5vw;
-        margin-top: 3em;}
-
-    .div {
-        background-color:none;
-        margin-bottom: 2em;}
-    
-    .div-menu {
-        background-color:none;
-        float: left;
-        height: 9vw;
-        text-align: left;
-        width: 21vw;}
-    
-    .div-logo {
-        background-color:none;
-        float: right;
-        text-align: right;
-        width: 69vw;}
-    
-    h1 {font-size:3em;}
-    
-    h2 {background-color: none;
-        margin-top: .8em;
-        font-size: 1.67em;} 
-        
-    h3 {color: black;
-        font-size: 1.67em;
-        margin:0em;
-        padding: 0em;}  
+            #accordion label{
+                cursor:pointer;
+                display:block;
+                background:0 0;}
             
-    .Sidebar{top:9em;
-        border-radius:25px;
-        left: 2vw;
-        background-color: none;
-        }
-
-    .genres {background-color: none; margin-bottom: 3vw;}
-    .side-1 {background-color: none; margin-bottom: 3vw;}
-    .side-2 {background-color: none;}
-
-    
+            #accordion input:checked+label{
+                background:0 0;
+                text-align:left}
+            
+            #accordion article{
+                background:silver;
+                border-radius:25px;
+                height:0;
+                margin-top: 1.5vw;
+                overflow:hidden;
+                margin-left:0vw;
+                z-index:10;
+                text-align:left}
+            
+            #accordion article p{
+                padding-right:2vw;
+                padding-left:2vw;
+                padding-top:2vw;
+                padding-bottom:2vw;
+                text-align:left}
+            
+            #accordion input:checked~article{
+                box-shadow:0 3px 3vw .67vw #000;
+                height:auto;
+                margin-top: 2vw;
+                margin-bottom:6vw;
+                text-align:left}
     }
 
 
-    @media (max-height: 33em) {
+/* Tablet portrait */
+  @media (max-width: 48em) {
+    /* Header */
+        .div-1 {
+            background-color:none;
+            width: 90vw;
+            margin-left: 5vw;
+            margin-top: 3em;}
+
+        .div {
+            background-color: none;
+            margin-bottom: 2em;}
+    
+        .div-menu {
+            background-color:none;
+            float: left;
+            height: 3.34em;
+            text-align: left;
+            width: 12vw;}
+    
+        .div-logo {
+            background-color:none;
+            float: right;
+            text-align: right;
+            width: 78vw;}
+
+    /* Type */
+        h1 {font-family:"Arial Rounded MT Bold";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            font-size: 3em;}
+    
+        h2 {font-family:"Arial Rounded MT Bold";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            font-size: 3.67vw;}
+    
+        h3 {font-family:"Arial Rounded MT Bold";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            background-color: none;
+            line-height: 1.125;
+            margin-bottom: 1vw;
+            font-size: 3vw;}
+    
+        h4 {font-family:;
+            -webkit-font-smoothing: antialiased;}
+    
+        p{
+            font-family:"ABC Helveesti Trial";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            line-height: 1.125;
+            font-size: 3vw;}
+
+    /* Sidebar */
+        .genres {
+            font-family: "Arial Rounded MT Bold";
+            line-height: 1.125;}
+    
+        .column-2 {
+            font-family: "Arial Rounded MT Bold";
+            line-height: 1.125;}
+      
+        .Sidebar{transform:translate3d(-300%,0,0);}
+        
+        .Hamburger{
+            opacity:100%;
+            z-index:6;
+            margin-top:calc(2.16em - 1.8vw);
+            
+            left:2.34vw;
+            background-color: none;}
+    
+        .Sidebar.open{
+            transform:translate3d(0,0,0);
+            z-index:6;
+            margin-top:0em}
+        
         .Sidebar{top:9em;
             border-radius:25px;
             left: 2vw;
-            background-color: none;
-            }
-            }
+            background-color:white;}
 
-  /* mobile landscape */
+        .genres {background-color: none; margin-bottom: 3vw;}
+        .side-1 {background-color: none; margin-bottom: 3vw;}
+        .side-2 {background-color: none;}
+
+/* Wineont2 */
+        input{
+            background-color: red;
+            font-size: 3.34vw;
+            font-family:Arial Rounded MT Bold;
+            border:0;
+            margin-left:-2vw;
+            margin-bottom: 1vw;
+            margin-top: 1vw;}
+
+        .wrapper {
+            display: flex;
+            width: 90vw;
+            margin: auto;
+            flex-wrap: wrap;}
+        
+        .image {
+            order: 1;
+            flex: 0 0 44vw;
+            background-color: none;}
+        
+        .tits {
+            order: 2;
+            margin-left: 1.5vw;
+            background-color: white;
+            flex: 0 0 44.5vw; }
+
+        .areola {background-color: white;}
+        
+        .text {
+            order: 3;
+            margin-top: 1.5vw;
+            background-color: white;  
+            flex: 0 0 100%;}
+        
+        p {margin-top: -.1vw;
+            margin-bottom: -.1vw;}
+        
+        .clips {order: 4;
+            margin-top: 1.5vw;
+            background-color: white;
+            flex: 0 0 100%;
+            text-align: right;}
+        
+        .cart {order: 5;
+            margin-top: 1.5vw;
+            flex: 0 0 90vw;
+            background-color: white;
+            margin-left: 0%;}
+        
+        #accordion input{display:none}
+        
+        #accordion label{
+            cursor:pointer;
+            display:block;
+            background:0 0;}
+        
+        #accordion input:checked+label{
+            background:0 0;
+            text-align:left}
+        
+        #accordion article{
+            background:silver;
+            border-radius:25px;
+            height:0;
+            margin-top: 1.5vw;
+            overflow:hidden;
+            margin-left:0vw;
+            z-index:10;
+            text-align:left}
+        
+        #accordion article p{
+            padding-right:3vw;
+            padding-left:3vw;
+            padding-top:3vw;
+            padding-bottom:3vw;
+            text-align:left}
+        
+        #accordion input:checked~article{
+            box-shadow:0 3px 3vw .67vw #000;
+            height:auto;
+            margin-top: 2vw;
+            margin-bottom:6vw;
+            text-align:left}
+    }
+
+/* Mobile landscape */
+    @media (max-height: 33em) {
+
+    
+        h3 {font-family:"Arial Rounded MT Bold";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            background-color: white;
+            line-height: 1.125;
+            margin-bottom: 1vw;
+            font-size: 3vw;}
+
+        .genres {background-color: none; margin-bottom: 0vw; margin-right: 4vw;}
+        .side-1 {background-color: none; margin-bottom: 3vw;}
+        .side-2 {background-color: none;}    
+        
+        .Sidebar{top:9em;
+            border-radius:25px;
+            left: 2vw;
+            background-color: none;}
+    }
+
+/* Larger mobile portrait */
    @media (max-width: 33em) {
-    .div-1 {
-        background-color:none;
-        width: 90vw;
-        margin: auto;
-        margin-top: 3em;}
+    /* Header */   
+        .div-1 {background-color:none;
+            width: 90vw;
+            margin: auto;
+            margin-top: 3em;}
 
-    .div {background-color:none;
-        margin-bottom: 2em;}
+        .div {background-color: none;
+            margin-bottom: 2em;}
     
-    .div-menu {background-color:none;
-        float: left;
-        height: 9vw;
-        text-align: left;
-        width: 24vw;}
-    
-    .div-logo {background-color:none;
-        float: right;
-        text-align: right;
-        width: 66vw;}
-
-    
-    h1 {font-size: 9vw;}
-    
-    h2 {background-color: none;
-        margin-top: .8em;
-        font-size: 5vw;}
+        .div-menu {background-color:none;
+            float: left;
+            position: relative;
             
-    h3 {font-size: 5vw;
-        margin:0em;
-        padding: 0em;}
+            height: 3.1em;
+            text-align: left;
+            width: 18vw;}
+    
+        .div-logo {background-color:none;
+            float: right;
+            text-align: right;
+            width: 72vw;}
 
-    .Sidebar{
-        top: 27vw;
-        background-color: red;
-        }
+    /* Type */ 
+        h1 {font-family:"Arial Rounded MT Bold";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            font-size: 9vw;}
+    
+        h2 {font-family:"Arial Rounded MT Bold";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            font-size: 5vw;}
+    
+        h3 {font-family:"Arial Rounded MT Bold";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            color: black;
+            line-height: 1.125;
+            font-size: 5vw;}
+    
+        h4 {
+            -webkit-font-smoothing: antialiased;}
+    
+        p {font-family:"ABC Helveesti Trial";
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            color: black;
+            background-color: none;
+            line-height: 1.125;} 
+            
+        
+        
+    /* Sidebar */
+    .Hamburger{
+        opacity:100%;
+        z-index:6;
+        margin-top: 1.2em;
+        
+        left:2.34vw;
+        background-color:none;}
 
-    .genres {background-color: none; margin-bottom: 3vw;}
-    .side-1 {background-color: none; margin-bottom: 3vw;}
-    .side-2 {background-color: none;}
+
+        .Sidebar{
+            top: 27vw;
+            background-color: white;}
+
+        .genres {background-color: none; margin-bottom: 3vw;}
+        .side-1 {background-color: none; margin-bottom: 3vw;}
+        .side-2 {background-color: none;}
+
+        
+
+    /* Wineont2 */
+ 
     }
 
 
-     /* mobile portrait */
+/* Mobile portrait */
     @media (max-width: 24em) {
-    .div {background-color: none;
-        margin-bottom: 0em;}
+    /* Header */
+        .div {background-color: none;
+            margin-bottom: 0em;}
         
-    .div-1 {display: flex;
-        flex-wrap: wrap;
-        width: 90vw;
-        margin: auto;
-        margin-top: 12vw;}
+        .div-1 {display: flex;
+            flex-wrap: wrap;
+            width: 90vw;
+            margin: auto;
+            margin-top: 12vw;}
     
-    .div-menu {background-color:none;
-        height: 9vw;
-        margin-bottom: 9vw;
-        order: 2;
-        margin-left: 0;
-        flex: 50%;}
+        .div-menu {background-color:none;
+            height: 6vw;
+            margin-bottom: 9vw;
+            order: 2;
+            margin-left: 0;
+            flex: 100%;}
     
-    .div-logo {order: 1;
+        .div-logo {order: 1;
+            background-color: none;
+            text-align: left;
+            flex: 50%;}
+
+    /* Type */
+    h1 {font-family:"Arial Rounded MT Bold";
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        font-size: 9vw;}
+
+    h2 {font-family:"Arial Rounded MT Bold";
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        font-size: 5vw;}
+
+    h3 {font-family:"Arial Rounded MT Bold";
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        color: black;
+        line-height: 1.125;
+        font-size: 5vw;}
+
+    h4 {font-family:;
+        -webkit-font-smoothing: antialiased;
+        letter-spacing: 2px;
+        font-weight: bolder;}
+
+    p {font-family:"ABC Helveesti Trial";
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        color: black;
         background-color: none;
-        text-align: left;
-        flex: 50%;}
-
-    h1 {font-size: 12.34vw;}
-
-    h2 {font-size: 7vw;
-        margin-top: 0em;}
-
-    h3 {font-size: 7vw;
-        margin:0em;
-        padding: 0em;}
+        line-height: 1.125;} 
     
-   
+    /* Sidebar */
 
-    .Sidebar{border-radius:6vw;
-        background-color: none;
-        top:calc(27vw + 1.34em);
-        height:calc(93vw + 1em);
-        width:54vw;
-        left: 1vw;
-        box-shadow:2px 6px 6px 0 #000}
+        .Sidebar{border-radius:6vw;
+            background-color: none;
+            top:calc(27vw + 1.34em);
+            height:calc(93vw + 1em);
+            width:54vw;
+            left: 1vw;
+            box-shadow:2px 6px 6px 0 #000}
 
-    .genres {background-color: none; margin-bottom: 3vw;}
-    .side-1 {background-color: none; margin-bottom: 3vw;}
-    .side-2 {background-color: none;}
-     /* ends default shit */
-}
+        .genres {background-color: none; margin-bottom: 3vw;}
+        .side-1 {background-color: none; margin-bottom: 3vw;}
+        .side-2 {background-color: none;}
+
+    }
 
 
 
